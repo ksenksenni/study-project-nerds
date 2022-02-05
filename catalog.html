@@ -9,29 +9,31 @@
 <body>
 
     <header>
-        <a>
+        <a href="index.html">
             <img src="https://via.placeholder.com/160x65" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
         </a>
 
         <ul>
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
+            <li><a>Магазин</a></li>
             <li><a href="#">Контакты</a></li>
         </ul>
         <a href="#">Корзина</a>
     </header>
 
     <main>
-        <h1>МагазФн готовых шаблонов</h1>
+        <section>
+            <h1>МагазФн готовых шаблонов</h1>
+        </section>
 
         <section>
-            <h2>фильтр товаров</h2>
+            <h2>Фильтр</h2>
 
             <form action="https://echo.htmlacademy.ru/" method="post">
                 <fieldset>
                     <legend>Стоимость:</legend>
-                    <input id="progress-ptice" type="range" min="0" max="200000" step="1" value="150000"><br>
+                    <input id="progress-ptice" type="range" min="0" max="200000" step="1"><br>
 
                     <label for="price-from">от</label>
                     <input type="text" name="price-filter" value="0" id="price-from">
@@ -91,16 +93,20 @@
                 </fieldset>
 
                 <button type="submit">Показать</button>
-
-                <fieldset>
-                    <button type="submit">По цене</button>
-                    <button type="submit">По типу</button>
-                    <button type="submit">По названию</button>
-
-                    <button type="submit">Вниз</button>
-                    <button type="submit">Вверх</button>
-                </fieldset>
             </form>
+        </section>
+
+        <section>
+            <h2>Сортировка</h2>
+
+            <p>Сортировать:</p>
+            <ul>
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По названию</a></li>
+                <li><a href="#">Вниз</a></li>
+                <li><a href="#">Вверх</a></li>
+            </ul>
         </section>
 
         <section>
@@ -109,38 +115,56 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Sedona">
+                        <h3>Sedona</h3>
                     </a>
+                    <p>Информационный сайт для туристов</p>
+                    <a href="#">9 900 ₽</a>
+                    <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Sedona">
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Pink App">
+                        <h3>Pink App</h3>
                     </a>
+                    <p>Продуктовый лендинг приложения для iOS и Android</p>
+                    <a href="#">9 900 ₽</a>
+                    <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Pink App">
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Brodski">
+                        <h3>Barbershop</h3>
                     </a>
+                    <p>Сайт салона красоты. Для мужчин, да.</p>
+                    <a href="#">9 900 ₽</a>
+                    <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Barbershop">
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Mishka">
+                        <h3>Mishka</h3>
                     </a>
+                    <p>Интернет-магазин вязаных игрушек</p>
+                    <a href="#">9 900 ₽</a>
+                    <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Mishka">
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="A Plus">
+                        <h3>A Plus</h3>
                     </a>
+                    <p>Лендинг курсов повышения квалификации</p>
+                    <a href="#">9 900 ₽</a>
+                    <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="A Plus">
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Кваст">
+                        <h3>Кваст</h3>
                     </a>
+                    <p>Промо-сайт производителя крафтового кваса</p>
+                    <a href="#">9 900 ₽</a>
+                    <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Кваст">
                 </li>
             </ul>
 
