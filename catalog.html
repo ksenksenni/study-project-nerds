@@ -23,7 +23,68 @@
     </header>
 
     <main>
-        <h1>Магазин готовых шаблонов</h1>
+        <h1>МагазФн готовых шаблонов</h1>
+
+        <section>
+            <h2>фильтр товаров</h2>
+
+            <form action="https://echo.htmlacademy.ru/" method="post">
+                <fieldset>
+                    <legend>Стоимость:</legend>
+                    <input id="progress-ptice" type="range" min="0" max="200000" step="1" value="150000"><br>
+
+                    <label for="price-from">от</label>
+                    <input type="text" name="price-filter" value="0" id="price-from">
+
+                    <label for="price-to">до</label>
+                    <input type="text" name="price-filter" value="150 000" id="price-to">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="grid-filter" value="adaptive" id="adaptive-grid" checked>
+                            <label for="adaptive-grid">Адаптивная</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="grid-filter" value="fixed" id="fixed-grid">
+                            <label for="fixed-grid">Фиксированная</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="grid-filter" value="rubber" id="rubber-grid">
+                            <label for="rubber-grid">Резиновая</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="peculiarities-filter" value="slider" id="slider-peculiarities" checked>
+                            <label for="slider-peculiarities">Слайдер</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="peculiarities-filter" value="advantage" id="advantage-peculiarities">
+                            <label for="advantage-peculiarities">Блок преимуществ</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="peculiarities-filter" value="news" id="news-peculiarities" checked>
+                            <label for="news-peculiarities">Новости</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="peculiarities-filter" value="galery" id="galery-peculiarities">
+                            <label for="galery-peculiarities">Галерея</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="peculiarities-filter" value="basket" id="basket-peculiarities">
+                            <label for="basket-peculiarities">Корзина</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </section>
 
     </main>
 
