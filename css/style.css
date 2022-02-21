@@ -9,6 +9,12 @@
     --basic-white: #ffffff;
     --social-grey: #E1E1E1;
     --special-green: #00CA74;
+    --hover-green: #00BC6C;
+    --active-green: #00AA62;
     --special-red: #FB565A;
+    --hover-red: #E74246;
+    --active-red: #D7373B;
     --special-yellow: #EFC849;
+    --hover-yellow: #EAB534;
+    --active-yellow: #E5A722;
 }
