@@ -18,3 +18,24 @@
     --hover-yellow: #EAB534;
     --active-yellow: #E5A722;
 }
+
+
+/* Global */
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-extra-dark);
+    background-color: var(--basic-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
