@@ -13,118 +13,120 @@
 </head>
 
 <body>
-
-    <header>
+    <header class="main-header">
         <a>
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
         </a>
 
-        <ul>
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
+        <ul class="nav">
+            <li class="nav-item"><a class="link" href="#">Студия</a></li>
+            <li class="nav-item"><a class="link" href="#">Клиенты</a></li>
+            <li class="nav-item"><a class="link" href="catalog.html">Магазин</a></li>
+            <li class="nav-item"><a class="link" href="#">Контакты</a></li>
         </ul>
-        <a href="#">Корзина</a>
+
+        <a class="nav-link link" href="#">Корзина</a>
     </header>
 
     <main>
         <h1>Дизайн-студия Нёрдс</h1>
-        <section>
-            <p>Долго, дорого, скрупулезно.</p>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a href="#">Узнать больше</a>
-            <img src="img/slide-smartphones.png" width="760" height="431" alt="">
-        </section>
+        <div class="slider">
+            <section>
+                <p class="slider-title">Долго, дорого, скрупулезно.</p>
+                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+                <img class="slider-img" src="img/slide-smartphones.png" width="760" height="431" alt="">
+            </section>
 
-        <section>
-            <p>Любим математику как никто другой</p>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-            <a href="#">Узнать больше</a>
-            <img src="img/slide-monitors.png" width="760" height="431" alt="">
-        </section>
+            <section>
+                <p class="slider-title">Любим математику как никто другой</p>
+                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+                <a class="btn" href="#">Узнать больше</a>
+                <img class="slider-img" src="img/slide-monitors.png" width="760" height="431" alt="">
+            </section>
 
-        <section>
-            <p>Только ночь, только хардкор</p>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a href="#">Узнать больше</a>
-            <img src="img/slide-tablets.png" width="760" height="431" alt="">
-        </section>
+            <section>
+                <p class="slider-title">Только ночь, только хардкор</p>
+                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <a class="btn" href="#">Узнать больше</a>
+                <img class="slider-img" src="img/slide-tablets.png" width="760" height="431" alt="">
+            </section>
+        </div>
 
-        <section>
+        <section class="services">
             <h2>Услуги</h2>
             <ul>
                 <li>
-                    <h3>Веб-сайты</h3>
+                    <h3 class="services-title">Веб-сайты</h3>
                     <!-- СТИЛЯМИ СДЕЛАТЬ<img src="img/img-site.svg" width="300" height="146" alt=""> -->
                     <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                    <button>Заказать</button>
+                    <button class="btn services-btn site-btn">Заказать</button>
                 </li>
 
                 <li>
-                    <h3>Приложения</h3>
+                    <h3 class="services-title">Приложения</h3>
                     <!-- СТИЛЯМИ СДЕЛАТЬ<img src="img/img-application.svg" width="300" height="146" alt=""> -->
                     <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <button>Заказать</button>
+                    <button class="btn services-btn app-btn">Заказать</button>
                 </li>
 
                 <li>
-                    <h3>Презентации</h3>
+                    <h3 class="services-title">Презентации</h3>
                     <!-- СТИЛЯМИ СДЕЛАТЬ<img src="img/img-presentation.svg" width="300" height="146" alt=""> -->
                     <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                    <button>Заказать</button>
+                    <button class="btn services-btn presentation-btn">Заказать</button>
                 </li>
             </ul>
         </section>
 
-        <section>
+        <section class="about">
             <h2>О компании</h2>
-            <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+            <p class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <p>Выполняем заказы на разработку:</p>
+            <p class="about-subtitle">Выполняем заказы на разработку:</p>
 
-            <ul>
+            <ul class="about-list">
                 <li>Веб-сайтов любой сложности</li>
                 <li>Мобильных приложений для iOS и Android</li>
                 <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
 
             <!--СТИЛЯМИ СДЕЛАТЬ <img src="img/nerds-illustration.svg" width="360" height="208" alt="Логотип дизайн-студии Нёрдс"> -->
-            <p>с 2004 года Любим точность во всем:</p>
+            <p class="about-caption">с 2004 года Любим точность во всем:</p>
 
             <dl>
-                <dt>146<sup>%</sup></dt>
-                <dd>Уровень самоотдачи</dd>
+                <dt class="about-number">146<sup class="about-percent">%</sup></dt>
+                <dd class="about-text">Уровень самоотдачи</dd>
 
-                <dt>100<sup>%</sup></dt>
-                <dd>Соблюдение сроков</dd>
+                <dt class="about-number">100<sup class="about-percent">%</sup></dt>
+                <dd class="about-text">Соблюдение сроков</dd>
 
-                <dt>50<sup>%</sup></dt>
-                <dd>Минимальная предоплата</dd>
+                <dt class="about-number">50<sup class="about-percent">%</sup></dt>
+                <dd class="about-text">Минимальная предоплата</dd>
             </dl>
         </section>
 
-        <section>
+        <section class="partners">
             <h2>Партнеры</h2>
-            <ul>
+            <ul class="partners-list">
                 <li>
                     <a href="https://htmlacademy.ru/intensive/htmlcss">
-                        <img src="img/logo-htmlacademy.svg" width="199" height="57" alt="Логотип HTML Academy">
+                        <img class="partners-img" src="img/logo-htmlacademy.svg" width="199" height="57" alt="Логотип HTML Academy">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                  <img src="img/logo-brodski.svg" width="209" height="90" alt="Логотип Барбершопа Brodski>">
+                  <img class="partners-img" src="img/logo-brodski.svg" width="209" height="90" alt="Логотип Барбершопа Brodski>">
               </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/logo-pink.svg" width="185" height="52" alt="Логотип PINK">
+                        <img class="partners-img" src="img/logo-pink.svg" width="185" height="52" alt="Логотип PINK">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/logo-mishka.svg" width="173" height="84" alt="Логотип Mishka">
+                        <img class="partners-img" src="img/logo-mishka.svg" width="173" height="84" alt="Логотип Mishka">
                     </a>
                 </li>
             </ul>
@@ -132,47 +134,47 @@
     </main>
 
     <footer>
-        <section>
+        <section class="contacts">
             <h2>Контакты</h2>
 
-            <section>
-                <p>NЁRDS DESIGN STUDIO</p>
-                <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
-                <a href="tel:+78005558628">+7 800 555-86-28</a>
-                <a href="#">Напишите нам</a>
+            <section class="contact-container">
+                <p class="contact-container-title">NЁRDS DESIGN STUDIO</p>
+                <p class="contact-container-text">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
+                <a class="contact-container-text" href="tel:+78005558628">+7 800 555-86-28</a>
+                <a class="btn" href="#">Напишите нам</a>
             </section>
         </section>
 
         <!-- Здесь будет карта-->
 
-        <section>
+        <section class="footer">
             <h2>Футер</h2>
             <a href="#">ВК</a>
             <a href="#">ФБ</a>
             <a href="#">ИН</a>
 
-            <p>Давайте дружить, это выгодно!</p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+            <p class="footer-title">Давайте дружить, это выгодно!</p>
+            <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
         </section>
     </footer>
 
-    <section>
+    <section class="modal">
         <button type="submit">Закрыть</button>
 
         <form action="https://echo.htmlacademy.ru/" method="post">
             <fieldset>
-                <legend>Напишите нам</legend>
-                <label for="">Ваше имя:</label>
-                <input type="text" name="name-input" id="name" placeholder="Имя Фамилия">
+                <legend class="form-title">Напишите нам</legend>
+                <label class="form-label" for="">Ваше имя:</label>
+                <input class="form-input" type="text" name="name-input" id="name" placeholder="Имя Фамилия">
 
-                <label for="">Ваш email:</label>
-                <input type="text" name="email-input" id="email" placeholder="email@example.com "><br>
+                <label class="form-label" for="">Ваш email:</label>
+                <input class="form-input" type="text" name="email-input" id="email" placeholder="email@example.com "><br>
 
-                <label for="">Текст письма:</label>
-                <textarea name="massage-input" id="massage" rows="3">В свободной форме</textarea>
+                <label class="form-label" for="">Текст письма:</label>
+                <textarea class="form-input" name="massage-input" id="massage" rows="3">В свободной форме</textarea>
             </fieldset>
 
-            <button type="submit">Отправить</button>
+            <button class="btn form-btn" type="submit">Отправить</button>
         </form>
     </section>
 

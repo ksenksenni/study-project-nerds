@@ -14,9 +14,12 @@
     --special-red: #FB565A;
     --hover-red: #E74246;
     --active-red: #D7373B;
+    --active-whitw-opasity: rgba(255, 255, 255, 0.3);
     --special-yellow: #EFC849;
     --hover-yellow: #EAB534;
     --active-yellow: #E5A722;
+    --border: #D7DCDE;
+    --hover-border: #B4B9BB;
 }
 
 
@@ -65,4 +68,231 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    line-height: 18px;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-color: var(--special-red);
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: var(--hover-red);
+}
+
+.btn:active {
+    background-color: var(--active-red);
+    color: var(--active-whitw-opasity);
+}
+
+
+/* main-header */
+
+.main-header {
+    background-color: var(--basic-extra-light);
+}
+
+.link {
+    font-family: "Roboto-Medium", sans-serif;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.link:hover {
+    color: var(--special-red);
+}
+
+.link:active {
+    opacity: 0.3;
+}
+
+
+/* nav */
+
+.nav {
+    list-style: none;
+}
+
+
+/* slider */
+
+.slider {
+    background-color: var(--basic-extra-light);
+}
+
+.slider-title {
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    color: var(--basic-black);
+}
+
+
+/* .slider-img {
+    background-color: var(--special-red);
+} */
+
+
+/* services */
+
+.services-title {
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+
+.services-btn,
+.form-btn {
+    border: none;
+}
+
+.app-btn {
+    background-color: var(--special-green);
+}
+
+.app-btn:hover {
+    background-color: var(--hover-green);
+}
+
+.app-btn:active {
+    background-color: var(--active-green);
+}
+
+.presentation-btn {
+    background-color: var(--special-yellow);
+}
+
+.presentation-btn:hover {
+    background-color: var(--hover-yellow);
+}
+
+.presentation-btn:active {
+    background-color: var(--active-yellow);
+}
+
+
+/* about */
+
+.about-title {
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+    color: var(--basic-black);
+}
+
+.about-subtitle {
+    font-family: "Roboto-Bold", sans-serif;
+    text-transform: uppercase;
+}
+
+.about-list {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.about-caption {
+    font-family: "Roboto-Bold", sans-serif;
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+
+.about-number {
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 45px;
+    line-height: 64px;
+    color: var(--basic-black);
+}
+
+.about-percent {
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.about-text {
+    line-height: 18px;
+}
+
+
+/* partners */
+
+.partners-list {
+    list-style: none;
+}
+
+.partners-img {
+    background-color: var(--basic-extra-light);
+}
+
+
+/* contact-container */
+
+.contact-container {
+    background-color: var(--basic-white);
+}
+
+.contact-container-title {
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+.contact-container-text {
+    line-height: 18px;
+    color: var(--basic-dark);
+}
+
+
+/* footer*/
+
+.footer-title {
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--basic-black);
+}
+
+.footer-text {
+    line-height: 22px;
+}
+
+
+/* modal */
+
+.modal {
+    background-color: var(--basic-white);
+    font-family: "Roboto-Bold", sans-serif;
+    color: var(--basic-black);
+}
+
+.form-title {
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.form-label {
+    line-height: 18px;
+}
+
+.form-input {
+    font-family: "Roboto", sans-serif;
+    line-height: 18px;
+    color: var(--basic-neutral);
+    border: 2px solid var(--border);
+    border-radius: 3px;
+}
+
+.form-input:hover {
+    border: 2px solid var(--hover-border);
+}
+
+.form-input:focus {
+    border: 2px solid var(--basic-black);
+    color: var(--basic-neutral);
 }
