@@ -53,6 +53,9 @@
 /* Global */
 
 body {
+    min-width: 1440px;
+    margin: 0;
+    padding: 0;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -89,9 +92,9 @@ img {
 }
 
 
-/* main-header */
+/* page-header */
 
-.main-header {
+.page-header {
     background-color: var(--basic-extra-light);
 }
 
@@ -186,19 +189,18 @@ img {
     color: var(--basic-black);
 }
 
-.about-subtitle {
+.about-subtitle,
+.about-caption {
     font-family: "Roboto-Bold", sans-serif;
-    text-transform: uppercase;
-}
-
-.about-list {
-    list-style: none;
     text-transform: uppercase;
 }
 
 .about-caption {
-    font-family: "Roboto-Bold", sans-serif;
     color: var(--basic-black);
+}
+
+.about-list {
+    list-style: none;
     text-transform: uppercase;
 }
 
