@@ -14,12 +14,16 @@
     --special-red: #FB565A;
     --hover-red: #E74246;
     --active-red: #D7373B;
-    --active-whitw-opasity: rgba(255, 255, 255, 0.3);
+    --active-white-opasity: rgba(255, 255, 255, 0.3);
+    --active-black-opasity: rgba(0, 0, 0, 0.3);
     --special-yellow: #EFC849;
     --hover-yellow: #EAB534;
     --active-yellow: #E5A722;
     --border: #D7DCDE;
     --hover-border: #B4B9BB;
+    --hover-grey: #DFDFDF;
+    --active-grey: #D5D5D5;
+    --active-btn-border-grey: #DBDBDB;
 }
 
 
@@ -80,6 +84,7 @@ img {
     text-transform: uppercase;
     background-color: var(--special-red);
     border-radius: 3px;
+    border: none;
 }
 
 .btn:hover {
@@ -88,7 +93,7 @@ img {
 
 .btn:active {
     background-color: var(--active-red);
-    color: var(--active-whitw-opasity);
+    color: var(--active-white-opasity);
 }
 
 
@@ -111,6 +116,10 @@ img {
 
 .link:active {
     opacity: 0.3;
+}
+
+.active {
+    border-bottom: 2px solid var(--special-red);
 }
 
 
@@ -148,11 +157,6 @@ img {
     line-height: 30px;
     color: var(--basic-black);
     text-transform: uppercase;
-}
-
-.services-btn,
-.form-btn {
-    border: none;
 }
 
 .app-btn {
@@ -297,4 +301,118 @@ img {
 .form-input:focus {
     border: 2px solid var(--basic-black);
     color: var(--basic-neutral);
+}
+
+
+/* CATALOG */
+
+.catalog-title {
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+
+.catalog-title:hover {
+    color: var(--special-red);
+}
+
+.catalog-title:active {
+    opacity: 0.3;
+}
+
+.catalog-btn {
+    color: var(--basic-black);
+    background-color: var(--basic-extra-light);
+}
+
+.catalog-btn:hover {
+    background-color: var(--hover-grey);
+}
+
+.catalog-btn:active {
+    background-color: var(--active-grey);
+    color: var(--active-black-opasity);
+}
+
+.active-catalog-btn {
+    background-color: var(--basic-white);
+    border: 3px solid var(--active-btn-border-grey);
+}
+
+
+/* main-header */
+
+.main-header {
+    background-color: var(--basic-extra-light);
+}
+
+.main-title {
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    color: var(--basic-black);
+}
+
+
+/* filter */
+
+.filter-price {
+    line-height: 22px;
+}
+
+.filter-input {
+    background-color: var(--basic-extra-light);
+    border-radius: 3px;
+    border: none;
+}
+
+.filter-list {
+    list-style: none;
+}
+
+
+/* sort */
+
+.sort-list {
+    list-style: none;
+}
+
+.sort-link {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.sort-link:hover {
+    opacity: 0.6;
+}
+
+.sort-link:active {
+    opacity: 1;
+}
+
+.active-sort {
+    opacity: 1;
+}
+
+
+/* templates */
+
+.templates-list {
+    list-style: none;
+}
+
+.templates-info {
+    background-color: var(--basic-extra-light);
+}
+
+
+/* navigation-list */
+
+.navigation-list {
+    list-style: none;
 }

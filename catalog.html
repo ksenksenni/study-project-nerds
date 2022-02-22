@@ -1,56 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс каталог</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-
-    <header>
+<body class="page-body">
+    <header class="page-header">
         <a href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
         </a>
 
-        <ul>
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a>Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
+        <ul class="nav">
+            <li class="nav-item"><a class="link" href="#">Студия</a></li>
+            <li class="nav-item"><a class="link" href="#">Клиенты</a></li>
+            <li class="nav-item"><a class="link active">Магазин</a></li>
+            <li class="nav-item"><a class="link" href="#">Контакты</a></li>
         </ul>
-        <a href="#">Корзина</a>
+        <a class="nav-link link" href="#">Корзина</a>
     </header>
 
     <main>
-        <section>
-            <h1>МагазФн готовых шаблонов</h1>
+        <section class="main-header">
+            <h1 class="main-title">Магазин готовых шаблонов</h1>
         </section>
 
-        <section>
+        <section class="filter">
             <h2>Фильтр</h2>
 
             <form action="https://echo.htmlacademy.ru/" method="post">
-                <fieldset>
-                    <legend>Стоимость:</legend>
-                    <input id="progress-ptice" type="range" min="0" max="200000" step="1"><br>
+                <fieldset class="filter-price">
+                    <legend class="catalog-title">Стоимость:</legend>
+                    <input class="filter-input" id="progress-ptice" type="range" min="0" max="200000" step="1"><br>
 
                     <label for="price-from">от</label>
-                    <input type="text" name="price-filter" value="0" id="price-from">
+                    <input class="filter-input" type="text" name="price-filter" value="0" id="price-from">
 
                     <label for="price-to">до</label>
-                    <input type="text" name="price-filter" value="150 000" id="price-to">
+                    <input class="filter-input" type="text" name="price-filter" value="150 000" id="price-to">
                 </fieldset>
 
                 <fieldset>
-                    <legend>Сетка:</legend>
-                    <ul>
+                    <legend class="catalog-title">Сетка:</legend>
+                    <ul class="filter-list">
                         <li>
                             <input type="radio" name="grid-filter" value="adaptive" id="adaptive-grid" checked>
                             <label for="adaptive-grid">Адаптивная</label>
@@ -69,8 +68,8 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Особенности:</legend>
-                    <ul>
+                    <legend class="catalog-title">Особенности:</legend>
+                    <ul class="filter-list">
                         <li>
                             <input type="checkbox" name="peculiarities-filter" value="slider" id="slider-peculiarities" checked>
                             <label for="slider-peculiarities">Слайдер</label>
@@ -98,94 +97,106 @@
                     </ul>
                 </fieldset>
 
-                <button type="submit">Показать</button>
+                <button class="btn catalog-btn" type="submit">Показать</button>
             </form>
         </section>
 
-        <section>
+        <section class="sort">
             <h2>Сортировка</h2>
 
-            <p>Сортировать:</p>
-            <ul>
-                <li><a href="#">По цене</a></li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По названию</a></li>
-                <li><a href="#">Вниз</a></li>
-                <li><a href="#">Вверх</a></li>
+            <p class="catalog-title">Сортировать:</p>
+            <ul class="sort-list">
+                <li><a class="sort-link active-sort" href="#">По цене</a></li>
+                <li><a class="sort-link" href="#">По типу</a></li>
+                <li><a class="sort-link" href="#">По названию</a></li>
+                <li><a class="sort-link active-sort arrow-link" href="#">Вниз</a></li>
+                <li><a class="sort-link arrow-link" href="#">Вверх</a></li>
             </ul>
         </section>
 
-        <section>
+        <section class="templates">
             <h2>Список шаблонов</h2>
 
-            <ul>
+            <ul class="templates-list">
                 <li>
-                    <a href="#">
-                        <h3>Sedona</h3>
-                    </a>
-                    <p>Информационный сайт для туристов</p>
-                    <a href="#">9 900 ₽</a>
+                    <div class="templates-info">
+                        <a href="#">
+                            <h3 class="catalog-title">Sedona</h3>
+                        </a>
+                        <p>Информационный сайт для туристов</p>
+                        <a class="btn" href="#">9 900 ₽</a>
+                    </div>
                     <img src="img/img-sedona.png" width="358" height="578" alt="Sedona">
                 </li>
 
                 <li>
-                    <a href="#">
-                        <h3>Pink App</h3>
-                    </a>
-                    <p>Продуктовый лендинг приложения для iOS и Android</p>
-                    <a href="#">9 900 ₽</a>
+                    <div class="templates-info">
+                        <a href="#">
+                            <h3 class="catalog-title">Pink App</h3>
+                        </a>
+                        <p>Продуктовый лендинг приложения для iOS и Android</p>
+                        <a class="btn" href="#">9 900 ₽</a>
+                    </div>
                     <img src="img/img-pink.png" width="358" height="578" alt="Pink App">
                 </li>
 
                 <li>
-                    <a href="#">
-                        <h3>Barbershop</h3>
-                    </a>
-                    <p>Сайт салона красоты. Для мужчин, да.</p>
-                    <a href="#">9 900 ₽</a>
+                    <div class="templates-info">
+                        <a href="#">
+                            <h3 class="catalog-title">Barbershop</h3>
+                        </a>
+                        <p>Сайт салона красоты. Для мужчин, да.</p>
+                        <a class="btn" href="#">9 900 ₽</a>
+                    </div>
                     <img src="img/img-brodski.png" width="358" height="578" alt="Barbershop">
                 </li>
 
                 <li>
-                    <a href="#">
-                        <h3>Mishka</h3>
-                    </a>
-                    <p>Интернет-магазин вязаных игрушек</p>
-                    <a href="#">9 900 ₽</a>
+                    <div class="templates-info">
+                        <a href="#">
+                            <h3 class="catalog-title">Mishka</h3>
+                        </a>
+                        <p>Интернет-магазин вязаных игрушек</p>
+                        <a class="btn" href="#">9 900 ₽</a>
+                    </div>
                     <img src="img/img-mishka.png" width="358" height="578" alt="Mishka">
                 </li>
 
                 <li>
-                    <a href="#">
-                        <h3>A Plus</h3>
-                    </a>
-                    <p>Лендинг курсов повышения квалификации</p>
-                    <a href="#">9 900 ₽</a>
+                    <div class="templates-info">
+                        <a href="#">
+                            <h3 class="catalog-title">A Plus</h3>
+                        </a>
+                        <p>Лендинг курсов повышения квалификации</p>
+                        <a class="btn" href="#">9 900 ₽</a>
+                    </div>
                     <img src="img/img-a-plus.png" width="358" height="578" alt="A Plus">
                 </li>
 
                 <li>
-                    <a href="#">
-                        <h3>Кваст</h3>
-                    </a>
-                    <p>Промо-сайт производителя крафтового кваса</p>
-                    <a href="#">9 900 ₽</a>
+                    <div class="templates-info">
+                        <a href="#">
+                            <h3 class="catalog-title">Кваст</h3>
+                        </a>
+                        <p>Промо-сайт производителя крафтового кваса</p>
+                        <a class="btn" href="#">9 900 ₽</a>
+                    </div>
                     <img src="img/img-kvast.png" width="358" height="578" alt="Кваст">
                 </li>
             </ul>
 
-            <ul>
+            <ul class="navigation-list">
                 <li>
-                    <a>1</a>
+                    <a class="btn catalog-btn active-catalog-btn">1</a>
                 </li>
                 <li>
-                    <a href="#">2</a>
+                    <a class="btn catalog-btn" href="#">2</a>
                 </li>
                 <li>
-                    <a href="#">3</a>
+                    <a class="btn catalog-btn" href="#">3</a>
                 </li>
                 <li>
-                    <a href="#">Следующая</a>
+                    <a class="btn catalog-btn" href="#">Следующая</a>
                 </li>
             </ul>
         </section>
@@ -194,27 +205,29 @@
     </main>
 
     <footer>
-        <section>
+        <section class="contacts">
             <h2>Контакты</h2>
 
-            <section>
-                <p>NЁRDS DESIGN STUDIO</p>
-                <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
-                <a href="tel:+78005558628">+7 800 555-86-28</a>
-                <a href="#">Напишите нам</a>
+            <section class="contact-container">
+                <p class="contact-container-title">NЁRDS DESIGN STUDIO</p>
+                <p class="contact-container-text">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
+                <a class="contact-container-text" href="tel:+78005558628">+7 800 555-86-28</a>
+                <a class="btn" href="#">Напишите нам</a>
             </section>
         </section>
 
         <!-- Здесь будет карта-->
 
-        <section>
+        <section class="footer">
             <h2>Футер</h2>
-            <a href="#">ВК</a>
-            <a href="#">ФБ</a>
-            <a href="#">ИН</a>
+            <a class="social-btn" href="#">ВК</a>
+            <a class="social-btn" href="#">ФБ</a>
+            <a class="social-btn" href="#">ИН</a>
 
-            <p>Давайте дружить, это выгодно!</p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+            <div class="footer-content">
+                <p class="footer-title">Давайте дружить, это выгодно!</p>
+                <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
         </section>
     </footer>
 
