@@ -220,6 +220,11 @@ img {
 
 /* about */
 
+.about {
+    padding-top: 39px;
+    margin-bottom: 73px;
+}
+
 .wrapper-about {
     display: grid;
     grid-template-columns: 1fr 360px;
@@ -271,6 +276,10 @@ img {
 
 /* partners */
 
+.partners {
+    margin-bottom: 80px;
+}
+
 .partners-list {
     list-style: none;
     display: grid;
@@ -302,6 +311,11 @@ img {
 
 
 /* footer*/
+
+.footer {
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
 
 .wrapper-footer {
     display: grid;
