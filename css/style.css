@@ -422,7 +422,7 @@ img {
 
 /* main-header */
 
-.main-cotolog-content {
+.main-catalog-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 140px;
