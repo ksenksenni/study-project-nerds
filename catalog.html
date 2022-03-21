@@ -39,18 +39,24 @@
                 <h2 class="visually-hidden">Фильтр</h2>
 
                 <form action="https://echo.htmlacademy.ru/" method="post">
-                    <fieldset class="filter-price">
+                    <fieldset class="filter-price form-border-none">
                         <legend class="catalog-title">Стоимость:</legend>
-                        <input class="filter-input" id="progress-ptice" type="range" min="0" max="200000" step="1"><br>
+                        <input class="filter-input input-progress" id="progress-ptice" type="range" min="0" max="200000" step="1"><br>
 
-                        <label for="price-from">от</label>
-                        <input class="filter-input" type="text" name="price-filter" value="0" id="price-from">
+                        <div class="price-wrapper">
+                            <div>
+                                <label class="filter-label" for="price-from">от</label>
+                                <input class="filter-input" type="text" name="price-filter" value="0" id="price-from">
+                            </div>
 
-                        <label for="price-to">до</label>
-                        <input class="filter-input" type="text" name="price-filter" value="150 000" id="price-to">
+                            <div>
+                                <label class="filter-label" for="price-to">до</label>
+                                <input class="filter-input" type="text" name="price-filter" value="150 000" id="price-to">
+                            </div>
+                        </div>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="filter-grid form-border-none">
                         <legend class="catalog-title">Сетка:</legend>
                         <ul class="filter-list">
                             <li>
@@ -70,7 +76,7 @@
                         </ul>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="filter-peculiarities form-border-none">
                         <legend class="catalog-title">Особенности:</legend>
                         <ul class="filter-list">
                             <li>
@@ -107,14 +113,16 @@
             <section class="sort">
                 <h2 class="visually-hidden">Сортировка</h2>
 
-                <p class="catalog-title">Сортировать:</p>
-                <ul class="sort-list">
-                    <li><a class="sort-link active-sort" href="#">По цене</a></li>
-                    <li><a class="sort-link" href="#">По типу</a></li>
-                    <li><a class="sort-link" href="#">По названию</a></li>
-                    <li><a class="sort-link active-sort arrow-link" href="#">Вниз</a></li>
-                    <li><a class="sort-link arrow-link" href="#">Вверх</a></li>
-                </ul>
+                <div class="sort-wrapper">
+                    <p class="catalog-title">Сортировать:</p>
+                    <ul class="sort-list">
+                        <li><a class="sort-link active-sort" href="#">По цене</a></li>
+                        <li><a class="sort-link" href="#">По типу</a></li>
+                        <li><a class="sort-link" href="#">По названию</a></li>
+                        <li><a class="sort-link active-sort arrow-link" href="#">Вниз</a></li>
+                        <li><a class="sort-link arrow-link" href="#">Вверх</a></li>
+                    </ul>
+                </div>
             </section>
 
             <section class="templates">
