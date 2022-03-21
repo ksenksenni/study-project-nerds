@@ -502,7 +502,7 @@ img {
 .main-catalog-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 140px;
+    /* gap: 140px; */
 }
 
 .main-header {
@@ -612,10 +612,19 @@ img {
 
 .templates-list {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.templates-item {
+    width: 358px;
 }
 
 .templates-info {
     background-color: var(--basic-extra-light);
+    padding-left: 52px;
+    padding-right: 53px;
 }
 
 
@@ -624,4 +633,14 @@ img {
 .navigation-list {
     list-style: none;
     grid-column: 1 / -1;
+    display: flex;
+    margin-top: 55px;
+}
+
+.navigation-item {
+    margin-right: 11px;
+}
+
+.navigation-item:last-child {
+    margin-right: 0;
 }
