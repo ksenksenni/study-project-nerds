@@ -89,6 +89,7 @@ img {
     background-color: var(--special-red);
     border-radius: 3px;
     border: none;
+    padding: 17px 54px 15px 54px;
 }
 
 .btn:hover {
@@ -176,6 +177,24 @@ img {
 
 .nav-item {
     margin-right: 45px;
+}
+
+.cart {
+    padding-left: 40px;
+    position: relative;
+}
+
+.cart::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 15px;
+    height: 11px;
+    background-image: url("/img/Shape.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #D7373B;
 }
 
 
