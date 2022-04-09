@@ -436,7 +436,10 @@ img {
     line-height: 22px;
 }
 
-.social-btn {
+.social-btn
+/* сделать svg в разметке*/
+
+{
     background-color: var(--social-grey);
     padding: 30px;
     border-radius: 50%;
