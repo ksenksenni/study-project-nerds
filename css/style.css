@@ -208,11 +208,26 @@ img {
 
 .slider {
     margin-bottom: 80px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.slider-list {
+    margin-top: -1px;
+    padding-left: 0;
+}
+
+.slider-item {
+    display: grid;
+    grid-template-columns: 416px 1fr;
 }
 
 .slide {
+    display: none;
+}
+
+.slide-current {
     display: grid;
-    grid-template-columns: 416px 1fr;
 }
 
 .slider-title {
@@ -221,6 +236,36 @@ img {
     line-height: 55px;
     color: var(--basic-black);
     width: 538px;
+}
+
+.slider-img {
+    height: 100%;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 96px;
+    left: calc(50% - 44px);
+    z-index: 20;
+    display: flex;
+    width: 88px;
+    justify-content: space-between;
+}
+
+.slider-controls button {
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background-color: var(--basic-white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-controls .current {
+    background-image: url(../img/ellipse.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
 }
 
 
@@ -325,6 +370,7 @@ img {
 .about-caption {
     color: var(--basic-black);
     text-align: center;
+    margin-top: 28px;
 }
 
 .about-list {
@@ -334,6 +380,7 @@ img {
 .about-item {
     padding-left: 32px;
     position: relative;
+    margin-bottom: 15px;
 }
 
 .about-item::before {
