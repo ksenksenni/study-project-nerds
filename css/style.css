@@ -148,6 +148,8 @@ img {
 }
 
 .link {
+    display: block;
+    height: 40px;
     font-family: "Roboto-Medium", sans-serif;
     line-height: 30px;
     text-transform: uppercase;
@@ -550,44 +552,6 @@ img {
 }
 
 
-/* сделать svg в разметке*/
-
-
-/* {
-    background-color: var(--social-grey);
-    padding: 30px;
-    border-radius: 50%;
-    position: relative;
-    color: var(--transparent);
-    margin-right: 5px;
-} */
-
-
-/* .social-btn:last-child {
-    margin-left: 0px;
-}
-
-.social-btn:hover {
-    background-color: var(--hover-red);
-}
-
-.social-btn:active {
-    background-color: var(--active-red);
-}
-
-.social-btn::before {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-} */
-
-
-/* .social-btn::before:active {
-    fill-opacity: 0.3;
-} */
-
-
 /* modal */
 
 .modal {
@@ -684,6 +648,9 @@ img {
 .catalog-btn {
     color: var(--basic-black);
     background-color: var(--basic-extra-light);
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .catalog-btn:hover {
@@ -852,4 +819,26 @@ img {
 
 .navigation-item:last-child {
     margin-right: 0;
+}
+
+.catalog-nav-btn {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--basic-black);
+    background-color: var(--basic-extra-light);
+}
+
+.catalog-nav-btn:hover {
+    background-color: var(--hover-grey);
+}
+
+.catalog-nav-btn:active {
+    background-color: var(--active-grey);
+    color: var(--active-black-opasity);
+}
+
+.active-catalog-nav-btn {
+    background-color: var(--basic-white);
+    border: 3px solid var(--active-btn-border-grey);
 }
