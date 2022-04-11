@@ -528,19 +528,42 @@ img {
     line-height: 22px;
 }
 
-.social-btn
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 261px;
+}
+
+.social-btn:hover .social-circle {
+    fill: var(--hover-red);
+}
+
+.social-btn:active .social-circle {
+    fill: var(--active-red);
+}
+
+.social-btn:active .social-icon {
+    fill-opacity: 0.3;
+}
+
+
 /* сделать svg в разметке*/
 
-{
+
+/* {
     background-color: var(--social-grey);
     padding: 30px;
     border-radius: 50%;
     position: relative;
     color: var(--transparent);
     margin-right: 5px;
-}
+} */
 
-.social-btn:last-child {
+
+/* .social-btn:last-child {
     margin-left: 0px;
 }
 
@@ -557,36 +580,12 @@ img {
     position: absolute;
     background-repeat: no-repeat;
     background-position: 0 0;
-}
+} */
 
 
 /* .social-btn::before:active {
     fill-opacity: 0.3;
 } */
-
-.vk-btn::before {
-    top: 31px;
-    left: 27px;
-    width: 26px;
-    height: 15px;
-    background-image: url("../img/vk-icon.svg");
-}
-
-.fb-btn::before {
-    top: 28px;
-    left: 35px;
-    width: 12px;
-    height: 22px;
-    background-image: url("../img/fb-icon.svg");
-}
-
-.insta-btn::before {
-    top: 29px;
-    left: 31px;
-    width: 21px;
-    height: 21px;
-    background-image: url("../img/insta-icon.svg");
-}
 
 
 /* modal */
