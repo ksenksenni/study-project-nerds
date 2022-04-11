@@ -28,6 +28,7 @@
     --arrow-active: #231F20;
     --tugle: #ABABAB;
     --shadow: #cfcfcf;
+    --radio-chacbox: #4D4D4D;
 }
 
 
@@ -807,7 +808,59 @@ img {
 }
 
 .filter-label {
-    margin-right: 12px;
+    /* margin-right: 12px; */
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-input-checkbox+label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    border: 2px solid var(--radio-chacbox);
+    opacity: 0.4;
+    border-radius: 3px;
+}
+
+.filter-input-checkbox:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -38px;
+    width: 21px;
+    height: 17px;
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-radio+label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--radio-chacbox);
+    opacity: 0.4;
+    border-radius: 50%;
+}
+
+.filter-input-radio:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -36px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--radio-chacbox);
+    border-radius: 50%;
+    opacity: 0.4;
 }
 
 .filter-list {
