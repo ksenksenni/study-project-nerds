@@ -25,6 +25,7 @@
     --active-grey: #D5D5D5;
     --active-btn-border-grey: #DBDBDB;
     --transparent: transparent;
+    --arrow-active: #231F20;
 }
 
 
@@ -776,6 +777,20 @@ img {
 .arrow-link {
     margin-left: 18px;
     margin-right: 0;
+    opacity: 0.3;
+}
+
+.arrow-link:hover {
+    opacity: 1;
+}
+
+.arrow-link:active {
+    fill: var(--arrow-active);
+}
+
+.active-sort-link {
+    fill: var(--arrow-active);
+    opacity: 1;
 }
 
 
