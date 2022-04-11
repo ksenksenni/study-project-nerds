@@ -26,6 +26,8 @@
     --active-btn-border-grey: #DBDBDB;
     --transparent: transparent;
     --arrow-active: #231F20;
+    --tugle: #ABABAB;
+    --shadow: #cfcfcf;
 }
 
 
@@ -699,9 +701,90 @@ img {
     grid-row: 1/3;
 }
 
+.filter-item {
+    margin: 0;
+    margin-top: 18px;
+    margin-bottom: 54px;
+    padding: 0;
+    border: none;
+}
+
+.range-filter {
+    width: 260px;
+    margin-top: 35px;
+}
+
+.range-controls {
+    position: relative;
+    height: 41px;
+    margin-bottom: 15px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: var(--basic-extra-light);
+    border-radius: 5px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: var(--border);
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: var(--special-green);
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid var(--basic-white);
+    background-color: var(--tugle);
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 var(--shadow);
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 18px;
+}
+
+.range-controls .toggle-max {
+    left: 160px;
+}
+
 .filter-price {
     line-height: 22px;
     margin-bottom: 54px;
+}
+
+.price-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-controls label {
+    text-transform: uppercase;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+}
+
+.price-controls input {
+    width: 60px;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+    color: var(--basic-extra-dark);
+    border: none;
+    border-radius: 5px;
+    background: var(--basic-extra-light);
+    font-family: inherit;
+    font-size: inherit;
 }
 
 .price-wrapper {
