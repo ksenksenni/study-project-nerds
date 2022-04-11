@@ -796,6 +796,24 @@ img {
     background-color: var(--basic-extra-light);
     padding-left: 52px;
     padding-right: 53px;
+    text-align: center;
+    padding-top: 26px;
+    padding-bottom: 44px;
+}
+
+.templates-title {
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.templates-desc {
+    margin: 0;
+    color: var(--basic-dark);
+    line-height: 18px;
+}
+
+.templates-btn {
+    margin-top: 32px;
 }
 
 .templates-img {
